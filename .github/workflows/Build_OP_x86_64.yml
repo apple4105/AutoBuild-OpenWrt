@@ -11,9 +11,9 @@ on:
   release:
     types: [published]
 
-  push:
-    branches: 
-      - master
+  #push:
+    #branches: 
+      #- master
 
   #schedule:
   #  - cron: 0 8 * * 5
@@ -76,7 +76,7 @@ jobs:
     - name: Import external feeds
       working-directory: ./openwrt
       run: |
-        git clone https://github.com/BCYDTZ/luci-app-LingTiGameAcc.git package/esir
+        git clone https://github.com/apple4105/luci-app-lingtigamebooster.git package/dm
      #git clone "your_github_link" package/"your_folder_name"      
 
     - name: Configuration Customization - Build_x86_64
